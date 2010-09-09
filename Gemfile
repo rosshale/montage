@@ -7,8 +7,10 @@ gem 'rails', '3.0.0'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+# Use unicorn as the attr_writer :eb server
+gem 'haml'
+gem 'shoulda'
+gem 'factory_girl'
 
 # Deploy with Capistrano
 # gem 'capistrano'
