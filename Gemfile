@@ -9,8 +9,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the attr_writer :eb server
 gem 'haml'
-gem 'shoulda'
-gem 'factory_girl'
+
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -27,6 +26,7 @@ gem 'factory_girl'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :test, :development do
+  gem 'shoulda'
+  gem 'factory_girl'
+end

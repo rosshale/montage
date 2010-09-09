@@ -1,1 +1,6 @@
-Hello I am the posts page!!
+%ul
+- @posts.each do |post|
+  %li
+    = link_to post.title, post.link
+    Posted By:
+    = post.name
