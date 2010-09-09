@@ -8,7 +8,7 @@ gem 'rails', '3.0.0'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the attr_writer :eb server
-gem 'haml'
+gem 'haml', ">= 3.0.18"
 gem 'heroku_deploy'
 gem 'httparty'
 gem 'heroku'
