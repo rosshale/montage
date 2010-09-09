@@ -9,6 +9,10 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the attr_writer :eb server
 gem 'haml'
+gem 'heroku_deploy'
+gem 'httparty'
+gem 'heroku'
+gem 'factory_girl'
 
 
 # Deploy with Capistrano
@@ -26,7 +30,6 @@ gem 'haml'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-group :test, :development do
+group :test do
   gem 'shoulda'
-  gem 'factory_girl'
 end
